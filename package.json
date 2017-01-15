@@ -1,0 +1,19 @@
+{
+  "name": "bgg-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo src/index.js --live --open --dir public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "budo": "^9.4.5"
+  },
+  "dependencies": {
+    "choo": "^4.0.3",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
