@@ -2,8 +2,15 @@ const choo = require('choo');
 const html = require('choo/html');
 const app = choo();
 
+const chrome = require('./pages/chrome');
+const main = require('./pages/main');
+
+const api = require('./models/bggAPI');
+
+app.model(api);
+
 app.router([
-  ['/', require('./pages/chrome')]
+  ['/', chrome.bind(this, main)],
 ]);
 
 const tree = app.start();
